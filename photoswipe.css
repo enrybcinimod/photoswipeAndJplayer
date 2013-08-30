@@ -10,6 +10,19 @@
  * positions etc.
  */
 
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	height: 100%;
+	overflow: hidden;
+}
+
+
 body.ps-active, body.ps-building, div.ps-active, div.ps-building
 {
 	background: #000;
