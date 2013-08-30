@@ -25,7 +25,7 @@ body {
 
 body.ps-active, body.ps-building, div.ps-active, div.ps-building
 {
-	background-image:url('images/subtle_white_feathers.png');
+	background-image: url('images/subtle_white_feathers.png');
 	overflow: hidden;
 }
 body.ps-active *, div.ps-active *
@@ -42,14 +42,14 @@ body.ps-active *:focus, div.ps-active *:focus
 /* Document overlay */
 div.ps-document-overlay 
 {
-	background-image:url('images/subtle_white_feathers.png');
+	background-image: url('images/subtle_white_feathers.png');
 }
 
 
 /* UILayer */
 div.ps-uilayer { 
 	
-	background-image:url('images/subtle_white_feathers.png');
+	background-image: url('images/subtle_white_feathers.png');
 	cursor: pointer;
 	
 }
