@@ -49,7 +49,7 @@ div.ps-document-overlay
 /* UILayer */
 div.ps-uilayer { 
 	
-	background: #000;
+	background-image:url('images/subtle_white_feathers.png');
 	cursor: pointer;
 	
 }
