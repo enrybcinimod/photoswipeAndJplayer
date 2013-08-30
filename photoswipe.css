@@ -12,7 +12,7 @@
 
 body.ps-active, body.ps-building, div.ps-active, div.ps-building
 {
-	background:#000;
+	background: #000;
 	overflow: hidden;
 }
 body.ps-active *, div.ps-active *
@@ -29,7 +29,7 @@ body.ps-active *:focus, div.ps-active *:focus
 /* Document overlay */
 div.ps-document-overlay 
 {
-	background:#000;
+	background: #000;
 }
 
 
