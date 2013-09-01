@@ -1,42 +1,324 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>Beloved</title>
-  <link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
-  <link rel="stylesheet" href="css/grid.css" type="text/css" media="screen">
-  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
-  
-</head>
-<body>
-<center>
-<div id="container" style='position:absolute;z-index:0;left:0;top:0;width:100%;height:100%' class="fadeIn fadeIn-3s">
-    <img id="image" src='images/full/beachwedding.jpg' style='height:100%' alt='[]' class="center" />
-      <div>
-        <img id="beloved" src='images/full/belovedlitepurple.gif'  style='width:20%;height:20%'  class="fadeIn fadeIn-3s fadeIn-Delay-5s">
-      </div>
-      <div>
-        <p id="text" class="fadeIn fadeIn-3s fadeIn-Delay-5s">
-         <a href="album.html"> Listen Now</a>
-        </p>
-      </div>
-</div>
-</center>
-  
-</body>
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Beloved</title>
+
+		<meta name="description" content="Beloved">
+		<meta name="author" content="Dominic Byrne">
+
+		<meta name="viewport" content="width=800, user-scalable=no">
+
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+			<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	
+	<link href="skin/blue.monday/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+	
+	<link href="photoswipe.css" type="text/css" rel="stylesheet" />
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+	<script type="text/javascript" src="js/jplayer.playlist.min.js"></script>
+	
+	<script type="text/javascript">
+	//<![CDATA[
+	$(document).ready(function(){
+
+		new jPlayerPlaylist({
+			jPlayer: "#jquery_jplayer_1",
+			cssSelectorAncestor: "#jp_container_1"
+		}, [
+			{
+				title:"Beneath the World",
+				mp3:"music/IntroAndBeneath.mp3",
+			},
+			{
+				title:"Joy and Pain",
+				mp3:"music/JOY & PAIN MM4.mp3",
+			},
+			{
+				title:"Sky Man",
+				mp3:"music/SKY MAN MM5.mp3",
+			},
+			{
+				title:"Turning To White",
+				mp3:"music/turning to white aug 2.mp3",
+			},
+			{
+				title:"I Love You Too",
+				mp3:"music/I LOVE YOU TOO MM3.mp3",
+			},
+			{
+				title:"Caravan Park",
+				mp3:"music/CARAVAN PARK DOM MIX 1.mp3",
+			},
+			{
+				title:"Too High",
+				mp3:"music/TOO HIGH COMP.mp3",
+			},
+			{
+				title:"Step into the Light",
+				mp3:"music/STEP INTO THE LIGHT MM COMP.mp3",
+			},
+			{
+				title:"Eyes of Love",
+				mp3:"music/SKY MAN MM5.mp3",
+			},
+			{
+				title:"Deeper Love",
+				mp3:"music/DEEPER LOVE DESK MIX 7.7.13.mp3",
+			}
+		], {
+
+  			playlistOptions: {
+	  			autoPlay: true,
+	    		enableRemoveControls: true
+  			},
+			swfPath: "js",
+			supplied: "oga, mp3",
+			wmode: "window",
+			smoothPlayBar: true,
+			keyEnabled: true,
+			autoPlay: true
+		});
+	});
+	//]]>
+	</script>
+	
+	<script type="text/javascript" src="lib/klass.min.js"></script>
+	<script type="text/javascript" src="code.photoswipe-3.0.5.min.js"></script>
+	
+	<script type="text/javascript">
+
+		(function(window, PhotoSwipe){
+		
+			document.addEventListener('DOMContentLoaded', function(){
+			
+				var
+					options = {
+						preventHide: true,
+						zIndex: -1000,
+						getImageSource: function(obj){
+							return obj.url;
+						},
+						getImageCaption: function(obj){
+							return obj.caption;
+						},
+					},
+					instance = PhotoSwipe.attach( 
+						[
+							{ url: 'images/full/beachwedding.jpg', caption: 'Beloved'},
+							{ url: 'images/full/cunningham.jpg', caption: 'Bill Cunningham'},
+							{ url: 'images/full/claire.jpg', caption: 'Claire'},
+							{ url: 'images/full/shakespeare.jpg', caption: 'shakespeare'},
+							{ url: 'images/full/free.jpg', caption: 'free'},
+							{ url: 'images/full/allnations.jpg', caption: 'allnations'},
+							{ url: 'images/full/richdavis.jpg', caption: 'richdavis'},
+							{ url: 'images/full/70sbeach.jpg', caption: '70sbeach'},
+							{ url: 'images/full/rockitdrawing.jpg', caption: 'drawing'},
+							{ url: 'images/full/cloudsky.jpg', caption: 'cloudsky'},
+							{ url: 'images/full/fishingrods.jpg', caption: 'fishingrods'},
+							{ url: 'images/full/bluelightdisco.jpg', caption: 'disco'},
+							{ url: 'images/full/alice.jpg', caption: 'alice'},
+							{ url: 'images/full/wallpaint.jpg', caption: 'wallpaint'},
+							{ url: 'images/full/laneway.jpg', caption: 'laneway'},
+							{ url: 'images/full/skaters.jpg', caption: 'skaters'},
+							{ url: 'images/full/zombieindoorway.jpg', caption: 'Zombie'},
+							{ url: 'images/full/zombiechef.jpg', caption: 'Zombie Chef'},
+							{ url: 'images/full/kidsonsteps.gif', caption: 'Flinders St'},
+							{ url: 'images/full/newspaperart.jpg', caption: 'newspaperart'},
+							{ url: 'images/full/newspaperballerina.jpg', caption: 'newspaperballerina'},
+							{ url: 'images/full/metalboy.jpg', caption: 'Metal'},
+							{ url: 'images/full/digitaltrip.jpg', caption: 'Digital'},
+							{ url: 'images/full/colourphant.jpg', caption: 'Colourphant'},
+							{ url: 'images/full/soulsucker.jpg', caption: 'Soulsucker'},
+							{ url: 'images/full/img2464.jpg', caption: 'Flowers'},
+							{ url: 'images/full/turtle.jpg', caption: 'turtle'},
+							{ url: 'images/full/facemerge.jpg', caption: 'Facemerge'},
+							{ url: 'images/full/lonelyman.jpg', caption: 'lonely man'},
+							{ url: 'images/full/bluegold.jpg', caption: 'bluegold'},
+							{ url: 'images/full/jessica.jpg', caption: 'Skywriting'},
+							{ url: 'images/full/pngkids.jpg', caption: 'pngkids'},
+							{ url: 'images/full/factory.jpg', caption: 'factory'},
+							{ url: 'images/full/coolgirl.jpg', caption: 'Cool'},
+							{ url: 'images/full/townes.jpg', caption: 'Townes'},
+							{ url: 'images/full/venicebeach.jpg', caption: 'Venice Beach'},
+							{ url: 'images/full/littlegirldark.jpg', caption: 'little girl'},
+							{ url: 'images/full/littlegirllight.jpg', caption: 'little girl'},
+							{ url: 'images/full/centerplace.jpg', caption: 'center place'},
+							{ url: 'images/full/staystrong.jpg', caption: 'stay strong'},
+							{ url: 'images/full/ghosts.jpg', caption: 'Ghosts'},
+							{ url: 'images/full/horny.jpg', caption: 'Horny'},
+							{ url: 'images/full/cyberchick.jpg', caption: 'Cyberchick'},
+							{ url: 'images/full/crackheads.jpg', caption: 'heads'},
+							{ url: 'images/full/bridge.jpg', caption: 'bridge'},
+							{ url: 'images/full/bairnsdale.jpg', caption: 'bairnsdale'},
+							{ url: 'images/full/madman.jpg', caption: 'madman'},
+							{ url: 'images/full/demons.jpg', caption: 'demons'},
+							{ url: 'images/full/blackice.jpg', caption: 'ice'},
+							{ url: 'images/full/shadowman.jpg', caption: 'shadowman'},
+							{ url: 'images/full/ghostbabies.jpg', caption: 'babies'},
+							{ url: 'images/full/silvergoldmoon.jpg', caption: 'silvergoldmoon'},
+							{ url: 'images/full/reasonstolive.jpg', caption: 'Reasons to live'},
+							{ url: 'images/full/adriandream.jpg', caption: 'adriandream'},
+							{ url: 'images/full/bluewave.jpg', caption: 'wave'},
+							{ url: 'images/full/nicky.jpg', caption: 'Nicky Winmar'},
+							{ url: 'images/full/billhicks.jpg', caption: 'Bill Hicks'},
+							{ url: 'images/full/eyeball.jpg', caption: 'eyeball'},
+							{ url: 'images/full/notnegotiable.jpg', caption: 'notnegotiable'},
+							{ url: 'images/full/elvis.jpg', caption: 'Elvis'},
+							{ url: 'images/full/samcooke.jpg', caption: 'Sam Cooke'},
+							{ url: 'images/full/badday.jpg', caption: 'Bad Day'},
+							{ url: 'images/full/father.jpg', caption: 'Father'},
+							{ url: 'images/full/weightoff.jpg', caption: 'Weight Off'},
+							{ url: 'images/full/nothinginourway.jpg', caption: 'Nothing In Our Way'},
+							{ url: 'images/full/loveandlove.jpg', caption: 'Love and Love'},
+							{ url: 'images/full/married.jpg', caption: 'married'},
+							{ url: 'images/full/cityphoto.jpg', caption: 'cityphoto'},
+							{ url: 'images/full/mountains.jpg', caption: 'mountains'},
+							{ url: 'images/full/emandhailey.jpg', caption: 'Marshall and Hailey'},
+							{ url: 'images/full/rayandtess.jpg', caption: 'Ray and Tess'},
+						], 
+						options 
+					);
+					
+					instance.show(0);
+					
+			}, false);
+			
+			
+		}(window, window.Code.PhotoSwipe));
+		
+	</script>
+	
+	</head>
+
+	<body style="position:relative;">
+		<div class="meny">
+
+		<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+		<div id="jp_container_1" class="jp-audio">
+			<div class="jp-type-playlist">
+				<div class="jp-gui jp-interface">
+					<ul class="jp-controls">
+						<li><a href="javascript:;" class="jp-previous" tabindex="1">previous</a></li>
+						<li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
+						<li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
+						<li><a href="javascript:;" class="jp-next" tabindex="1">next</a></li>
+						<li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li>
+						<li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li>
+						<li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>
+						<li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li>
+					</ul>
+					<div class="jp-progress">
+						<div class="jp-seek-bar">
+							<div class="jp-play-bar"></div>
+						</div>
+					</div>
+					<div class="jp-volume-bar">
+						<div class="jp-volume-bar-value"></div>
+					</div>
+					<div class="jp-time-holder">
+						<div class="jp-current-time"></div>
+						<div class="jp-duration"></div>
+					</div>
+					<ul class="jp-toggles">
+						<li><a href="javascript:;" class="jp-shuffle" tabindex="1" title="shuffle">shuffle</a></li>
+						<li><a href="javascript:;" class="jp-shuffle-off" tabindex="1" title="shuffle off">shuffle off</a></li>
+						<li><a href="javascript:;" class="jp-repeat" tabindex="1" title="repeat">repeat</a></li>
+						<li><a href="javascript:;" class="jp-repeat-off" tabindex="1" title="repeat off">repeat off</a></li>
+					</ul>
+				</div>
+				<div class="jp-playlist">
+					<ul class="ul-playlist">
+						<li></li>
+					</ul>
+				</div>
+				<div class="jp-no-solution">
+					<span>Update Required</span>
+					To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+				</div>
+				<script type="text/javascript">$.jPlayer.keys(false);</script>
+			</div>
+		</div>
+	</div>
+
+	
+
+
+
+		<div class="meny-arrow"></div>
+
+		<div class="contents">
+
+		</div>
+
+		<script src="js/meny.min.js"></script>
+		<script>
+			// Create an instance of Meny
+			var meny = Meny.create({
+				// The element that will be animated in from off screen
+				menuElement: document.querySelector( '.meny' ),
+
+				// The contents that gets pushed aside while Meny is active
+				contentsElement: document.querySelector( '.contents' ),
+
+				// [optional] The alignment of the menu (top/right/bottom/left)
+				position: Meny.getQuery().p || 'top',
+
+				// [optional] The height of the menu (when using top/bottom position)
+				height: 200,
+
+				// [optional] The width of the menu (when using left/right position)
+				width: 260,
+
+				// [optional] Distance from mouse (in pixels) when menu should open
+				threshold: 40,
+
+				// [optional] Use mouse movement to automatically open/close
+				mouse: true,
+
+				// [optional] Use touch swipe events to open/close
+				touch: true
+			});
+
+			// API Methods:
+			// meny.open();
+			// meny.close();
+			// meny.isOpen();
+
+			// Events:
+			// meny.addEventListener( 'open', function(){ console.log( 'open' ); } );
+			// meny.addEventListener( 'close', function(){ console.log( 'close' ); } );
+
+			// Embed an iframe if a URL is passed in
+			if( Meny.getQuery().u && Meny.getQuery().u.match( /^http/gi ) ) {
+				var contents = document.querySelector( '.contents' );
+				contents.style.padding = '0px';
+				contents.innerHTML = '<div class="cover"></div><iframe src="'+ Meny.getQuery().u +'" style="width: 100%; height: 100%; border: 0; position: absolute;"></iframe>';
+			}
+		</script>
+		<script type="text/javascript">
+			function hideAddressBar()
+		{
+		  if(!window.location.hash)
+		  {
+		      if(document.height < window.outerHeight)
+		      {
+		          document.body.style.height = (window.outerHeight + 50) + 'px';
+		      }
+		 
+		      setTimeout( function(){ window.scrollTo(0, 1); }, 50 );
+		  }
+		}
+		 
+		window.addEventListener("load", function(){ if(!window.pageYOffset){ hideAddressBar(); } } );
+		window.addEventListener("orientationchange", hideAddressBar );
+
+		</script>
+
+	</body>
 </html>
-
-
-<script type="text/javascript">
-(function() {
-
-var img = document.getElementById('container').firstChild;
-img.onload = function() {
-    if(img.height > img.width) {
-        img.height = '100%';
-        img.width = 'auto';
-    }
-};
-
-}());
-</script>
