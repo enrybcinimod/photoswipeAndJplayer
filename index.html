@@ -22,24 +22,7 @@
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
 	<script type="text/javascript" src="js/jplayer.playlist.min.js"></script>
-	<script type="text/javascript">
-	function hideAddressBar()
-{
-  if(!window.location.hash)
-  {
-      if(document.height < window.outerHeight)
-      {
-          document.body.style.height = (window.outerHeight + 50) + 'px';
-      }
- 
-      setTimeout( function(){ window.scrollTo(0, 1); }, 50 );
-  }
-}
- 
-window.addEventListener("load", function(){ if(!window.pageYOffset){ hideAddressBar(); } } );
-window.addEventListener("orientationchange", hideAddressBar );
-
-	</script>
+	
 	<script type="text/javascript">
 	//<![CDATA[
 	$(document).ready(function(){
@@ -49,12 +32,8 @@ window.addEventListener("orientationchange", hideAddressBar );
 			cssSelectorAncestor: "#jp_container_1"
 		}, [
 			{
-				title:"Intro",
-				mp3:"music/DEEPER LOVE INTRO.mp3"
-			},
-			{
 				title:"Beneath the World",
-				mp3:"music/beneath the world strings aug 27 6.m4a",
+				mp3:"music/IntroAndBeneath.mp3",
 			},
 			{
 				title:"Joy and Pain",
@@ -128,28 +107,50 @@ window.addEventListener("orientationchange", hideAddressBar );
 							{ url: 'images/full/beachwedding.jpg', caption: 'Beloved'},
 							{ url: 'images/full/cunningham.jpg', caption: 'Bill Cunningham'},
 							{ url: 'images/full/claire.jpg', caption: 'Claire'},
+							{ url: 'images/full/shakespeare.jpg', caption: 'shakespeare'},
+							{ url: 'images/full/free.jpg', caption: 'free'},
 							{ url: 'images/full/zombieindoorway.jpg', caption: 'Zombie'},
 							{ url: 'images/full/zombiechef.jpg', caption: 'Zombie Chef'},
-							{ url: 'images/full/kidsonsteps.jpg', caption: 'Flinders St'},
-							{ url: 'images/full/coolgirl.jpg', caption: 'Cool'},
-							{ url: 'images/full/ghosts.jpg', caption: 'Ghosts'},
-							{ url: 'images/full/horny.jpg', caption: 'Horny'},
-							{ url: 'images/full/cyberchick.jpg', caption: 'Cyberchick'},
+							{ url: 'images/full/kidsonsteps.gif', caption: 'Flinders St'},
 							{ url: 'images/full/metalboy.jpg', caption: 'Metal'},
 							{ url: 'images/full/digitaltrip.jpg', caption: 'Digital'},
 							{ url: 'images/full/colourphant.jpg', caption: 'Colourphant'},
 							{ url: 'images/full/soulsucker.jpg', caption: 'Soulsucker'},
-							{ url: 'images/full/elvis.jpg', caption: 'Elvis'},
-							{ url: 'images/full/samcooke.jpg', caption: 'Sam Cooke'},
-							{ url: 'images/full/badday.jpg', caption: 'Bad Day'},
+							{ url: 'images/full/img2464.jpg', caption: 'Flowers'},
+							{ url: 'images/full/turtle.jpg', caption: 'turtle'},
+							{ url: 'images/full/facemerge.jpg', caption: 'Facemerge'},
+							{ url: 'images/full/lonelyman.jpg', caption: 'lonely man'},
+							{ url: 'images/full/bluegold.jpg', caption: 'bluegold'},
 							{ url: 'images/full/jessica.jpg', caption: 'Skywriting'},
 							{ url: 'images/full/pngkids.jpg', caption: 'pngkids'},
 							{ url: 'images/full/factory.jpg', caption: 'factory'},
+							{ url: 'images/full/coolgirl.jpg', caption: 'Cool'},
 							{ url: 'images/full/townes.jpg', caption: 'Townes'},
+							{ url: 'images/full/venicebeach.jpg', caption: 'Venice Beach'},
+							{ url: 'images/full/littlegirldark.jpg', caption: 'little girl'},
+							{ url: 'images/full/littlegirllight.jpg', caption: 'little girl'},
+							{ url: 'images/full/centerplace.jpg', caption: 'center place'},
+							{ url: 'images/full/staystrong.jpg', caption: 'stay strong'},
+							{ url: 'images/full/ghosts.jpg', caption: 'Ghosts'},
+							{ url: 'images/full/horny.jpg', caption: 'Horny'},
+							{ url: 'images/full/cyberchick.jpg', caption: 'Cyberchick'},
+							{ url: 'images/full/crackheads.jpg', caption: 'heads'},
+							{ url: 'images/full/bridge.jpg', caption: 'bridge'},
+							{ url: 'images/full/bairnsdale.jpg', caption: 'bairnsdale'},
+							{ url: 'images/full/madman.jpg', caption: 'madman'},
+							{ url: 'images/full/demons.jpg', caption: 'demons'},
+							{ url: 'images/full/blackice.jpg', caption: 'ice'},
+							{ url: 'images/full/shadowman.jpg', caption: 'shadowman'},
+							{ url: 'images/full/ghostbabies.jpg', caption: 'babies'},
+							{ url: 'images/full/silvergoldmoon.jpg', caption: 'silvergoldmoon'},
+							{ url: 'images/full/reasonstolive.jpg', caption: 'Reasons to live'},
+							{ url: 'images/full/adriandream.jpg', caption: 'adriandream'},
+							{ url: 'images/full/bluewave.jpg', caption: 'wave'},
 							{ url: 'images/full/nicky.jpg', caption: 'Nicky Winmar'},
 							{ url: 'images/full/billhicks.jpg', caption: 'Bill Hicks'},
-							{ url: 'images/full/venicebeach.jpg', caption: 'Venice Beach'},
-							{ url: 'images/full/reasonstolive.jpg', caption: 'Reasons to live'},
+							{ url: 'images/full/elvis.jpg', caption: 'Elvis'},
+							{ url: 'images/full/samcooke.jpg', caption: 'Sam Cooke'},
+							{ url: 'images/full/badday.jpg', caption: 'Bad Day'},
 							{ url: 'images/full/father.jpg', caption: 'Father'},
 							{ url: 'images/full/weightoff.jpg', caption: 'Weight Off'},
 							{ url: 'images/full/nothinginourway.jpg', caption: 'Nothing In Our Way'},
@@ -157,7 +158,6 @@ window.addEventListener("orientationchange", hideAddressBar );
 							{ url: 'images/full/married.jpg', caption: 'married'},
 							{ url: 'images/full/cityphoto.jpg', caption: 'cityphoto'},
 							{ url: 'images/full/mountains.jpg', caption: 'mountains'},
-							{ url: 'images/full/img2464.jpg', caption: 'Flowers'},
 							{ url: 'images/full/emandhailey.jpg', caption: 'Marshall and Hailey'},
 							{ url: 'images/full/rayandtess.jpg', caption: 'Ray and Tess'},
 						], 
@@ -176,9 +176,7 @@ window.addEventListener("orientationchange", hideAddressBar );
 	</head>
 
 	<body style="position:relative;">
-
 		<div class="meny">
-			<h2>Beloved</h2>
 
 		<div id="jquery_jplayer_1" class="jp-jplayer"></div>
 		<div id="jp_container_1" class="jp-audio">
@@ -225,10 +223,11 @@ window.addEventListener("orientationchange", hideAddressBar );
 				<script type="text/javascript">$.jPlayer.keys(false);</script>
 			</div>
 		</div>
+	</div>
 
 	
 
-		</div>
+
 
 		<div class="meny-arrow"></div>
 
@@ -281,7 +280,24 @@ window.addEventListener("orientationchange", hideAddressBar );
 				contents.innerHTML = '<div class="cover"></div><iframe src="'+ Meny.getQuery().u +'" style="width: 100%; height: 100%; border: 0; position: absolute;"></iframe>';
 			}
 		</script>
+		<script type="text/javascript">
+			function hideAddressBar()
+		{
+		  if(!window.location.hash)
+		  {
+		      if(document.height < window.outerHeight)
+		      {
+		          document.body.style.height = (window.outerHeight + 50) + 'px';
+		      }
+		 
+		      setTimeout( function(){ window.scrollTo(0, 1); }, 50 );
+		  }
+		}
+		 
+		window.addEventListener("load", function(){ if(!window.pageYOffset){ hideAddressBar(); } } );
+		window.addEventListener("orientationchange", hideAddressBar );
 
+		</script>
 
 	</body>
 </html>

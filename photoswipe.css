@@ -121,7 +121,7 @@ div.ps-caption-content
 .ul-playlist {
 	opacity:1 !important;
 	display:block !important;
-	z-index: 1000 !important;
+	z-index: 10000 !important;
 }
 
 
