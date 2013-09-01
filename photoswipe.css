@@ -124,6 +124,12 @@ div.ps-caption-content
 	z-index: 10000 !important;
 }
 
+.playplay {
+	opacity: 1 !important;
+	display:block !important;
+	z-index: 10000 !important;
+}
+
 
 div.ps-toolbar
 { 
@@ -258,3 +264,4 @@ div.ps-toolbar-play div.ps-toolbar-content
 	     -o-transition: opacity 0.1s ease;
 	        transition: opacity 0.1s ease;
 }
+
